@@ -5,8 +5,8 @@
       class="d-none d-sm-flex and-down"
       v-if="$route.meta.hideNavbar"
     >
-      <v-toolbar-title
-        class="text-white"><v-icon color="#fe4b57" class="mx-2">mdi-draw</v-icon>Isaac
+      <v-toolbar-title class="text-white"
+        ><v-icon color="#fe4b57" class="mx-2">mdi-draw</v-icon>Isaac
         Mhlanga</v-toolbar-title
       >
       <v-spacer></v-spacer>
@@ -49,10 +49,10 @@
               :to="item.path"
               @click="dialog = false"
             >
-             <strong >{{ item.text }}</strong>
-            <template v-slot:prepend class="mobil-nav-icon">
-              <v-icon  :icon="item.icon" ></v-icon>
-            </template>   
+              <strong>{{ item.text }}</strong>
+              <template v-slot:prepend class="mobil-nav-icon">
+                <v-icon :icon="item.icon"></v-icon>
+              </template>
             </v-list-item>
           </v-list>
         </v-card>
@@ -77,6 +77,18 @@ export default {
           text: "Skills",
           active: false,
           path: "/skills",
+        },
+        {
+          icon: "mdi-lightbulb-on",
+          text: "Education",
+          active: false,
+          path: "",
+        },
+        {
+          icon: "mdi-lightbulb-on",
+          text: "Data analyst",
+          active: false,
+          path: "",
         },
         {
           icon: "mdi-briefcase",
@@ -104,8 +116,7 @@ export default {
 };
 </script>
 <style scoped>
-.container
-{
+.container {
   background-color: #1f2235 !important;
 }
 .v-toolbar {
@@ -123,21 +134,17 @@ export default {
   color: #fe4b57 !important;
   font-size: 14px;
 }
-.v-list-item-title
-{
+.v-list-item-title {
   color: grey !important;
   padding-left: -1em !important;
 }
-.v-list-item
-{
+.v-list-item {
   color: white !important;
 }
-.v-list-item:hover
-{
+.v-list-item:hover {
   color: #fe4b57 !important;
 }
-.mobil-nav-icon .v-icon:hover
-{
+.mobil-nav-icon .v-icon:hover {
   color: #fe4b57 !important;
 }
 .v-list {
@@ -147,8 +154,7 @@ export default {
 .v-card {
   background-color: #1f2235 !important;
 }
-.bg-color
-{
+.bg-color {
   color: grey !important;
 }
 @media only screen and (max-width: 600px) {

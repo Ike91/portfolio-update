@@ -5,38 +5,32 @@
         <h1>Skills</h1>
       </div>
       <br />
-      <div class="summary text-center">
+      <div class="summary text-center mb-5">
         <p>
           I aquired these skills through personal projects and practice, and
-          from online platforms such as code academy, leetCode just to name a few, it was very
-          funny learning them. I have taken it upon myself to stay abreast of
-          emerging technologies in computer science, and use this knowledge to
-          continue to improve upon my own skills and abilities. I have also been
-          able to apply my skills to help CS majors students.
+          from online platforms such as code academy, leetCode just to name a
+          few, it was very funny learning them. I have taken it upon myself to
+          stay abreast of emerging technologies in computer science, and use
+          this knowledge to continue to improve upon my own skills and
+          abilities. I have also been able to apply my skills to help CS majors
+          students.
         </p>
       </div>
 
-      <div class="container">
-        <div class="skills-section">
-            <div class="skills-container">
-              <v-card elevation="9" v-for="skill in skills" :key="skill.name">
-                <div class="skills-box" >
-                  <div class="skills-title">
-                    <div class="skills-img">
-                      <img 
-                        :src="skill.link"
-                        alt=""
-                        class="skills-icons"
-                      />
-                    </div>
-                    <h3>{{ skill.name }}</h3> 
-                  </div>
+      <div class="skills-section">
+        <div class="skills-container">
+          <v-card elevation="9" v-for="skill in skills" :key="skill.name">
+            <div class="skills-box">
+              <div class="skills-title">
+                <div class="skills-img">
+                  <img :src="skill.link" alt="" class="skills-icons" />
                 </div>
-              </v-card>
+                <h3>{{ skill.name }}</h3>
+              </div>
             </div>
+          </v-card>
         </div>
       </div>
-    
     </div>
 
     <div class="education">
@@ -46,9 +40,8 @@
           icon-label="custom icon label text {0} of {1}"
           color="#ff4a57"
         ></v-rating>
-        
       </div>
-      <hr style="color: grey;">
+      <hr style="color: grey" />
       <div class="row" style="margin-top: 1em">
         <div class="col-sm-12 col-md-4">
           <div class="bar front expert" data-skill="HTML5"></div>
@@ -61,8 +54,10 @@
           <div class="bar front advanced" data-skill="C++"></div>
           <div class="bar back intermediate" data-skill="JAVA"></div>
           <div class="bar front intermediate" data-skill="PHP"></div>
-          <div class="bar back intermediate" data-skill="REST + SOAP API`S"></div>
-        
+          <div
+            class="bar back intermediate"
+            data-skill="REST + SOAP API`S"
+          ></div>
         </div>
         <div class="col-sm-12 col-md-4">
           <div class="bar front intermediate" data-skill="VUE.JS"></div>
@@ -70,58 +65,48 @@
           <div class="bar back intermediate" data-skill="LARAVEL"></div>
           <div class="bar back basic" data-skill="FIREBASE"></div>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
 </template>
 <script>
-
 export default {
-
   data() {
     return {
-     
       rating: 3,
-      skills : [
-        {name: "HTML 5", link: "./skills/html-5.png"},
-        {name: "CSS 3", link: "./skills/CSS.3.svg"},
-        {name: "JAVASCRIPT", link: "./skills/javascript.png"},
-        {name: "C++", link: "./skills/c++.png"},
-        {name: "JAVA", link: "./skills/java.png"},
-        {name: "PHP", link: "./skills/php.png"},
-        {name: "LARAVEL", link: "./skills/laravel.png"},
+      skills: [
+        { name: "HTML 5", link: "./skills/html-5.png" },
+        { name: "CSS 3", link: "./skills/CSS.3.svg" },
+        { name: "JAVASCRIPT", link: "./skills/javascript.png" },
+        { name: "C++", link: "./skills/c++.png" },
+        { name: "JAVA", link: "./skills/java.png" },
         { name: "VUE.JS", link: "./skills/vue.png" },
-        {name: "REACT.JS", link: "./skills/logo-react-icon.png"},
-        {name: "SPRING BOOT", link: "./skills/spring.png"},
-        {name: "FIREBASE", link: "./skills/firebase.png"},
-        {name: "GIT & GITHUB", link: "./skills/git.png"},
-        {name: "REST + SOAP API", link: "./skills/rest.png"},
-        
-      ]
+        { name: "REACT.JS", link: "./skills/logo-react-icon.png" },
+        { name: "SPRING BOOT", link: "./skills/spring.png" },
+        { name: "FIREBASE", link: "./skills/firebase.png" },
+        { name: "GIT & GITHUB", link: "./skills/git.png" },
+        { name: "REST + SOAP API", link: "./skills/rest.png" },
+      ],
     };
   },
-
- 
 };
 </script>
 <style scoped>
 .v-container {
   flex-flow: column wrap;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .summary {
   padding-bottom: 2em;
   color: white;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
-  
 }
 .skills-container {
   font-size: 14px;
   font-style: inherit;
 }
-.skills-container
-{
+.skills-container {
   background: #35394e;
   padding: 2rem !important;
   border-radius: 10px;
@@ -316,7 +301,6 @@ my skill set
 
 .bar.front::before {
   background-color: #fe4b57;
- 
 }
 .bar.back::before {
   background-color: #fe4b57;

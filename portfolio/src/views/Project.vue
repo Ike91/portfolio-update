@@ -36,6 +36,15 @@
                   <v-card
                     className="p-2 mt-5 bg-gray-900 rounded-md hover:bg-gray-900"
                   >
+                    <v-card-action>
+                      <v-row justify="space-between">
+                        <v-col cols="auto">
+                          <v-btn className="ml-2 mt-2">
+                            <v-icon left size="70">mdi-folder</v-icon></v-btn
+                          >
+                        </v-col>
+                      </v-row>
+                    </v-card-action>
                     <v-card-text>
                       <P
                         >Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -67,6 +76,15 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="4" xl="4">
                   <v-card className="p-2 mt-5 bg-gray-900  rounded-md">
+                    <v-card-action>
+                      <v-row justify="space-between">
+                        <v-col cols="auto">
+                          <v-btn className="ml-2 mt-2">
+                            <v-icon left size="70">mdi-folder</v-icon></v-btn
+                          >
+                        </v-col>
+                      </v-row>
+                    </v-card-action>
                     <v-card-text>
                       <P
                         >Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -80,7 +98,7 @@
                       <v-container className="mt-2">
                         <v-row className="flex justify-center">
                           <v-col cols="2">
-                            <v-icon>mdi-vuejs</v-icon>
+                            <v-icon class="text-red-200">mdi-vuejs</v-icon>
                           </v-col>
                           <v-col cols="2">
                             <v-icon>mdi-vuetify</v-icon>
@@ -98,6 +116,15 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="4" xl="4">
                   <v-card className="p-2 mt-5 bg-gray-900 rounded-md">
+                    <v-card-action>
+                      <v-row justify="space-between">
+                        <v-col cols="auto">
+                          <v-btn className="ml-2 mt-2 ">
+                            <v-icon left size="70">mdi-folder</v-icon></v-btn
+                          >
+                        </v-col>
+                      </v-row>
+                    </v-card-action>
                     <v-card-text>
                       <P
                         >Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -765,194 +792,11 @@ a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 1em;
 }
-
-.testimonial {
-  margin-top: 5rem;
-  min-height: 375px;
-  position: relative;
-  padding-top: 10px;
-  margin-bottom: -5rem;
-  background-position: center;
-  background-size: cover;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-#testimonial4 .carousel-inner:hover {
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-#testimonial4 .carousel-inner:active {
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-#testimonial4 .carousel-inner .item {
-  overflow: hidden;
-}
-
-.v-card {
-  background: #35394e;
-}
-
-.testimonial4_indicators .carousel-indicators {
-  left: 0;
-  margin: 0;
-  width: 100%;
-  font-size: 0;
-  height: 20px;
-  bottom: 15px;
-  padding: 0 5px;
-  cursor: e-resize;
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: absolute;
-  text-align: center;
-  white-space: nowrap;
-}
-.testimonial4_indicators .carousel-indicators li {
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  border: none;
-  text-indent: 0;
-  margin: 2px 3px;
-  cursor: pointer;
-  display: inline-block;
-  background: #fe4b57;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-.testimonial4_indicators .carousel-indicators .active {
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  border: none;
-  margin: 2px 3px;
-  background-color: #9dd3af;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-.testimonial4_indicators .carousel-indicators::-webkit-scrollbar {
-  height: 3px;
-}
-.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb {
-  background: #fe4b57;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-.testimonial4_control_button .carousel-control {
-  top: 175px;
-  opacity: 1;
-  width: 40px;
-  bottom: auto;
-  height: 40px;
-  font-size: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  overflow: hidden;
-  line-height: 38px;
-  text-shadow: none;
-  text-align: center;
-  position: absolute;
-  background: transparent;
-  border: 2px solid #fe4b57;
-  text-transform: uppercase;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
-  transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
-}
-.testimonial4_control_button .carousel-control.left {
-  left: 7%;
-  top: 50%;
-  right: auto;
-}
-.testimonial4_control_button .carousel-control.right {
-  right: 7%;
-  top: 50%;
-  left: auto;
-}
-.testimonial4_control_button .carousel-control.left:hover,
-.testimonial4_control_button .carousel-control.right:hover {
-  color: #000;
-  background: #fe4b57;
-  border: 2px solid #fe4b57;
-}
-
-.testimonial4_header {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 550px;
-  display: block;
-  margin: 30px auto;
-  text-align: center;
-  position: relative;
-}
-.testimonial4_header h4 {
-  color: #fe4b57 !important;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 1em;
-}
-
-.testimonial4_slide {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-}
-.testimonial4_slide img {
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 136px;
-  height: 136px;
-  margin: auto;
-  display: block;
-  color: #f2f2f2;
-  font-size: 18px;
-  line-height: 46px;
-  text-align: center;
-  position: relative;
-  border-radius: 50%;
-  box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-  -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-  -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-}
-.testimonial4_slide p {
-  line-height: 1.4;
-  margin: 40px 0 20px 0;
-}
-.testimonial4_slide h4 {
-  color: #fe4b57 !important;
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.testimonial .carousel {
-  padding-bottom: 65px;
-}
-.testimonial .carousel-control-next-icon,
-.testimonial .carousel-control-prev-icon {
-  width: 35px;
-  height: 35px;
+.v-icon {
   color: #fe4b57 !important;
 }
 
-@media only screen and (max-width: 600px) {
-  .v-container {
-    margin-top: -5rem;
-  }
+.v-btn {
+  background: transparent !important;
 }
 </style>
