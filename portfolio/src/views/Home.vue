@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Profile />
+    <br className="mt-16" />
     <v-container className="skill-container mt-15 ">
       <div className="skill-header text-center">
         <h1 className="text-white">Core skills</h1>
@@ -17,7 +18,7 @@
           develop innovative solutions.
         </p>
       </div>
-      <div>
+      <div className="mt-16">
         <v-row>
           <v-col
             cols="12"
@@ -41,21 +42,23 @@
         </v-row>
       </div>
     </v-container>
-    <v-container>
-      <div>
-        <div className="text-center">
-          <h1>Noty worthy Projects</h1>
-          <p>
-            I have gained a strong foundation in various technologies through
-            building personal projects and tutoring computer science students at
-            different universities. Some of the projects I have worked on
-            include this web application using vue.js framework and firebase.
-            Through these experiences, I have gained a deep understanding of a
-            wide range of technologies and have developed the skills and
-            knowledge necessary to apply them effectively.
-          </p>
-        </div>
+    <br />
+    <br />
+    <v-container className="mt-16">
+      <div className="text-center text-white">
+        <h1>Noty worthy Projects</h1>
+        <p>
+          I have gained a strong foundation in various technologies through
+          building personal projects and tutoring computer science students at
+          different universities. Some of the projects I have worked on include
+          this web application using vue.js framework and firebase. Through
+          these experiences, I have gained a deep understanding of a wide range
+          of technologies and have developed the skills and knowledge necessary
+          to apply them effectively.
+        </p>
+      </div>
 
+      <div className="text-white">
         <v-row>
           <v-col cols="12" md="6" lg="4" xl="4">
             <v-card
@@ -184,38 +187,66 @@
             </v-card>
           </v-col>
         </v-row>
-        <div className="mt-3">
-          <v-btn class="text-caption" to="/project">Go to projects</v-btn>
+      </div>
+    </v-container>
+  </div>
+  <div class="flex justify-center items-center w-screen h-screen">
+    <!-- COMPONENT CODE -->
+    <div class="container mx-auto my-4 px-4 lg:px-20 sm:mt-20">
+      <div
+        class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl"
+      >
+        <div class="flex">
+          <div className="text-center text-white">
+            <h1>Send me a message</h1>
+            <p>
+              If you're interested in working with me, learning programming
+              concepts, or collaborating on projects, please don't hesitate to
+              use the contact form provided below. I'm always open to new
+              opportunities and partnerships, and I'm happy to answer any
+              questions you may have. I look forward to connecting with you and
+              exploring the possibilities of working together.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+          <input
+            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text"
+            placeholder="First Name*"
+          />
+          <input
+            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text"
+            placeholder="Last Name*"
+          />
+          <input
+            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="email"
+            placeholder="Email*"
+          />
+          <input
+            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="number"
+            placeholder="Phone*"
+          />
+        </div>
+        <div class="my-4">
+          <textarea
+            placeholder="Message*"
+            class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          ></textarea>
+        </div>
+        <div class="my-2 w-1/2 lg:w-1/4">
+          <button
+            class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+          >
+            Send Message
+          </button>
         </div>
       </div>
-    </v-container>
-    <v-container>
-      <div class="skill-header">
-        <span
-          ><h3 style="color: #ff4a57 !important">
-            <v-icon style="color: #ff4a57 !important">mdi-lightbulb</v-icon>
-            <span class="skills-adjust"></span>Interest
-          </h3></span
-        >
-      </div>
-
-      <hr style="color: #888ba5 !important" />
-      <div>
-        <p>
-          As a software developer, I am drawn to the potential of using data to
-          solve real-world problems and make a positive impact in fields such as
-          healthcare, education, and finance. Additionally, I find the
-          intellectual challenge and curiosity of understanding and working with
-          complex data and algorithms to be very rewarding. I believe that the
-          skills and knowledge I will gain through studying machine learning and
-          data science will not only be personally fulfilling, but also highly
-          valuable in the job market. Overall, I am passionate about pursuing a
-          career in these fields and believe that they offer limitless potential
-          for growth and advancement.
-        </p>
-      </div>
-    </v-container>
-    <div class="pb-15"></div>
+    </div>
+    <!-- COMPONENT CODE -->
   </div>
 </template>
 <script>
